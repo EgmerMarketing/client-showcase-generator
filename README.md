@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Client Showcase Generator
 
-## Getting Started
+A premium Next.js application built for **Egmer Marketing** that generates instant before/after website comparisons for sales presentations.
 
-First, run the development server:
+## 🚀 Features
+
+- **Instant Analysis**: Input any prospect's website URL and get immediate insights
+- **Split-Screen Comparison**: Visual before/after mockup comparison
+- **Issue Detection**: Automatically identifies common website problems:
+  - Missing schema markup
+  - WCAG compliance issues
+  - Slow load speeds
+  - Poor mobile optimization
+  - Lack of local SEO
+  - Outdated design
+- **Solution Showcase**: Highlights what Egmer Marketing would build instead
+- **Lead Generation**: Built-in contact form for prospect conversion
+- **Sales-Ready**: Perfect for live demos during sales calls
+
+## 🎨 Design
+
+- **Dark Theme**: Egmer's signature dark aesthetic (#0a0a0a background)
+- **Brand Colors**: 
+  - Primary Blue: #00ADEE
+  - Secondary Green: #8EE34D  
+  - Accent Orange: #FFAA53
+- **Premium UI**: Glass effects, subtle animations, and modern typography
+- **Fully Responsive**: Optimized for all devices and screen sizes
+- **No Emojis**: Clean, professional icon usage with Lucide React
+
+## 🛠️ Tech Stack
+
+- **Next.js 16** (App Router)
+- **TypeScript** 
+- **Tailwind CSS** (with custom Egmer theme)
+- **Lucide React** (icons)
+- **Modern CSS** (glass effects, gradients, animations)
+
+## 🏃‍♂️ Quick Start
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### For Sales Teams
+1. Open the application
+2. Enter prospect's website URL
+3. Click "Generate Showcase"
+4. Present the before/after comparison
+5. Highlight issues found and Egmer's solutions
+6. Use the contact form to capture lead information
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### URL Format
+- `example.com` ✅
+- `https://example.com` ✅
+- `www.example.com` ✅
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+├── app/
+│   ├── globals.css          # Egmer brand styling
+│   ├── layout.tsx           # Root layout
+│   ├── page.tsx            # Landing page with URL input
+│   └── showcase/
+│       └── page.tsx        # Comparison showcase page
+├── public/                  # Static assets
+├── DEPLOYMENT.md           # Deployment instructions
+└── README.md
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Sales Impact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This tool is designed to:
+- **Wow prospects** with instant visual comparisons
+- **Identify pain points** in their current website
+- **Demonstrate value** of Egmer's solutions
+- **Capture leads** with integrated contact form
+- **Close more deals** with compelling presentations
 
-## Deploy on Vercel
+## 🚀 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions for Vercel, Netlify, and other platforms.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔧 Customization
+
+### Adding New Issues
+Edit the `issues` array in `app/showcase/page.tsx` to add new website problems.
+
+### Adding New Features  
+Edit the `features` array in `app/showcase/page.tsx` to highlight additional Egmer solutions.
+
+### Brand Updates
+Update colors and styling in `app/globals.css` and the CSS custom properties.
+
+## 📞 Support
+
+Built for Egmer Marketing sales team. For technical support or feature requests, contact the development team.
+
+---
+
+**Built with ❤️ for Egmer Marketing's success**
